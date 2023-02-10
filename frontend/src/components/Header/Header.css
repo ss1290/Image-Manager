@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.header > button {
+  border: none;
+  outline: none;
+  width: 50%;
+  height: 10vh;
+  cursor: pointer;
+  color: whitesmoke;
+  font-size: large;
+}
+
+.header > button:first-child {
+  background-color: blue;
+}
+.header > button:last-child {
+  background-color: red;
+}

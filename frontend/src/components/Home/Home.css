@@ -1,0 +1,36 @@
+.uploadImage {
+  width: 100vw;
+  height: 90vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(231, 231, 231);
+}
+.imageForm {
+  background-color: white;
+  height: 50vh;
+  width: 30vw;
+  padding: 2vw;
+}
+.imageForm > div {
+  display: flex;
+  font-size: large;
+  flex-direction: column;
+  margin-bottom: 3vh;
+}
+.imageForm > div > input {
+  padding: 1vw;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 5px;
+}
+.imageForm > button {
+  width: 100%;
+  padding: 1vw;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
