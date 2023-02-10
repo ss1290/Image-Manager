@@ -1,14 +1,13 @@
-import { redirect } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
 
 const ProtectedRoute = ({ children, isAuthenticated }) => {
-  const { loading } = useSelector((state) => state.Image);
+  const navigate = useNavigate();
   useEffect(() => {
     if (isAuthenticated === false) {
-      redirect("/login");
+      navigate("/login");
     }
-  }, [isAuthenticated]);
+  }, [isAuthenticated, navigate]);
 
   return <>{children}</>;
 };
